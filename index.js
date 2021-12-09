@@ -13,7 +13,7 @@ const crypto = require('crypto')
  */
 const app = express()
 const port = process.env.PORT || '9000'
-const clientId = process.env.CLIENT_ID || FILL_ME
+const clientId = process.env.CLIENT_ID || 'FILL_ME'
 const oAuth2Client = new OAuth2Client(clientId)
 const dataFilePath = path.join(__dirname, 'data.json')
 
