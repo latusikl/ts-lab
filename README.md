@@ -10,7 +10,7 @@ Technologie Sieciowe Laboratorium
 
 ## Uruchomienie projektu
 
-Po wykonaniu kroków z sekcji wymagań wstępnych projekt można uruchomić. Korzystając z komendy `npm run start`.
+Po wykonaniu kroków z sekcji wymagań wstępnych projekt można uruchomić. Korzystając z komendy `npm start`.
 Poprawność uruchomienia jest sygnalizowana informacją wyświetloną w konsoli.
 </br>
 Aplikacja jest dostępna domyślnie na porcie 9000: http://localhost:9000/.
