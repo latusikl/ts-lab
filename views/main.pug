@@ -1,0 +1,72 @@
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" connect="width=device-width initial-scale=1")
+        meta(name="google-signin-client_id" content="FILL_ME")
+        title My Application
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css")
+        script(src="https://apis.google.com/js/platform.js")
+        script.
+            async function onSignIn(googleUser) {
+                logUserData(googleUser);
+                const response = await logInUser(googleUser);
+                if(response.ok){
+                    const responseBody = await response.json();
+                    console.log(responseBody)
+                    document.getElementById("message-div").innerText = responseBody.message
+                    document.getElementById("login-body").innerText = responseBody.googleUserData
+                }
+                else{
+                    console.error("Unable to login user.")
+                }
+            }
+
+            function logUserData(googleUser){
+                var profile = googleUser.getBasicProfile();
+                console.log(`ID: ${profile.getId()}`);
+                console.log(`Name: ${profile.getName()}`);
+                console.log(`Image URL: ${profile.getImageUrl()}`);
+                console.log(`Email: ${profile.getEmail()}`);
+            }
+
+            async function logInUser(googleUser){
+                FILL_ME
+                const body = JSON.stringify({idToken: token});
+                const url = `${document.URL}login/google`;
+                console.log(`ID Token: ${token}`);
+                const response = await fetch(url,
+                {
+                method: "POST",
+                headers: {
+                    "Content-Type" : "application/json"
+                },
+                body: body
+                })
+                return response;
+              }
+
+
+    body(class="container")
+        nav(class="navbar mt-2" role="navigation" aria-label="main navigation")
+            div(class="navbar-brand")
+                h1(class="navbar-item title is-4") IMIĘ NAZWISKO
+            div(class="navbar-end")
+                div(class="mt-2 g-signin2" data-onsuccess="onSignIn")
+        div(class="box")
+            div(class="box")
+                h6(class="title is-4") Doge
+                div(class="columns  mb-2")
+                    div(class="column")
+                        figure(class="image is-3by2")
+                            img(src="https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg" alt="Placeholder image")
+                    div(class="column is-three-fifths")
+                        div(class="content")
+                            p !{dogeParagraph}
+            div(class="box")
+                article(class="box message is-link")
+                    div(class="message-header")
+                        p Info
+                    div(id="message-div" class="message-body") You are not logged in.
+                pre(id="login-body" class="box")
+
+
