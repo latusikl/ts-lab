@@ -66,18 +66,6 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
 </details>
 
 <details>
-<summary>Wprowadzić niezbędne zmiany w projekcie</summary>
-
-1. Utworzyć nowe dane dostępowe.
-   ![credentials.png](doc/credentials.png)
-2. Dodać niezbędne dane.
-   ![credentials2.png](doc/credentials2.png)
-3. Zapisać wygenerowane dane dostępowe (`Client ID` oraz `Client secret`)
-   ![credentials3.png](doc/credentials3.png)
-</details>
-
-
-<details>
 <summary>Uzupełnić brakujące miejsca w kodzie.</summary>
 
 - `main.pug` - lina 5, 33, 52
