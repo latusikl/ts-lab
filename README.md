@@ -18,11 +18,9 @@ Dodatkowe informacje można znaleźć:
 - https://github.com/googleapis/google-api-nodejs-client
 - https://developers.google.com/identity/sign-in/web/sign-in
 
-![img1.png](doc/img1.png)
-
 ## Zadanie
 
-## Uzupełnić przygotowany przykład o funkcję Google Sign in.
+### Uzupełnić przygotowany przykład o funkcję Google Sign in.
 
 Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji do API Google: https://console.cloud.google.com/apis/credentials.
 
