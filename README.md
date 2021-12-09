@@ -18,11 +18,9 @@ Dodatkowe informacje można znaleźć:
 - https://github.com/googleapis/google-api-nodejs-client
 - https://developers.google.com/identity/sign-in/web/sign-in
 
-![img1.png](doc/img1.png)
-
 ## Zadanie
 
-## Uzupełnić przygotowany przykład o funkcję Google Sign in.
+### Uzupełnić przygotowany przykład o funkcję Google Sign in.
 
 Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji do API Google: https://console.cloud.google.com/apis/credentials.
 
@@ -61,45 +59,42 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
    ![credentials.png](doc/credentials.png)
 2. Dodać niezbędne dane.
    ![credentials2.png](doc/credentials2.png)
-3. Zapisać wygenerowane dane dostępowe (`Client ID` oraz `Client secret`)
+3. Zapisać wygenerowane dane dostępowe (`Client ID`)
    ![credentials3.png](doc/credentials3.png)
 </details>
-
-<details>
-<summary>Wprowadzić niezbędne zmiany w projekcie</summary>
-
-1. Utworzyć nowe dane dostępowe.
-   ![credentials.png](doc/credentials.png)
-2. Dodać niezbędne dane.
-   ![credentials2.png](doc/credentials2.png)
-3. Zapisać wygenerowane dane dostępowe (`Client ID` oraz `Client secret`)
-   ![credentials3.png](doc/credentials3.png)
-</details>
-
 
 <details>
 <summary>Uzupełnić brakujące miejsca w kodzie.</summary>
 
-- `main.pug` - lina 5, 33, 52
       
-      
+`main.pug` - lina 5, 33, 52
+
+<details>
+<summary>Linia 33</summary>
+
    ```javascript
       const token =  googleUser.getAuthResponse().id_token;   
    ```
+</details>
+      
+`index.js` - linia 16, 65
 
-- `index.js` - linia 16, 65
-   
+<details>
+<summary>Linia 65</summary>
+
    ```javascript
     return await oAuth2Client.verifyIdToken({
       idToken: idToken,
       audience: clientId
     })   
    ```
+      
+</details>
+      
 
 </details>
-
 
 ## Sprawozdzanie 
 
 - Zdjęcie ekranu aplikacji po zalogowaniu.
-- Zdjęcie formatki logowania Google.
+- Zdjęcie formularza logowania Google.
