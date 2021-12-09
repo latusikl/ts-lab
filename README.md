@@ -55,7 +55,7 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
 </details>
 
 <details>
-<summary>Wygenerować dane dostępu aplikacji OAuth`</summary>
+<summary>Wygenerować dane dostępu aplikacji OAuth</summary>
 
 1. Utworzyć nowe dane dostępowe.
    ![credentials.png](doc/credentials.png)
@@ -81,10 +81,11 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
 <summary>Uzupełnić brakujące miejsca w kodzie.</summary>
 
 - `main.pug` - lina 5, 33, 52
-
-      ```javascript
-      const token =  googleUser.getAuthResponse().id_token;`
-      ```
+      
+      
+   ```javascript
+      const token =  googleUser.getAuthResponse().id_token;   
+   ```
 
 - `index.js` - linia 16, 65
    
@@ -94,7 +95,6 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
       audience: clientId
     })   
    ```
-
 
 </details>
 
