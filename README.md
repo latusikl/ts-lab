@@ -61,7 +61,7 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
    ![credentials.png](doc/credentials.png)
 2. Dodać niezbędne dane.
    ![credentials2.png](doc/credentials2.png)
-3. Zapisać wygenerowane dane dostępowe (`Client ID` oraz `Client secret`)
+3. Zapisać wygenerowane dane dostępowe (`Client ID`)
    ![credentials3.png](doc/credentials3.png)
 </details>
 
@@ -70,13 +70,14 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
 
 - `main.pug` - lina 5, 33, 52
       
-      
+HINT (linia 33)      
    ```javascript
       const token =  googleUser.getAuthResponse().id_token;   
    ```
 
 - `index.js` - linia 16, 65
-   
+
+HINT (lina 65)   
    ```javascript
     return await oAuth2Client.verifyIdToken({
       idToken: idToken,
