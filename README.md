@@ -66,25 +66,33 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
 <details>
 <summary>Uzupełnić brakujące miejsca w kodzie.</summary>
 
-- `main.pug` - lina 5, 33, 52
       
-HINT (linia 33)      
+`main.pug` - lina 5, 33, 52
+
+<details>
+<summary>Linia 33</summary>
+
    ```javascript
       const token =  googleUser.getAuthResponse().id_token;   
    ```
+</details>
+      
+`index.js` - linia 16, 65
 
-- `index.js` - linia 16, 65
+<details>
+<summary>Linia 65</summary>
 
-HINT (lina 65)   
    ```javascript
     return await oAuth2Client.verifyIdToken({
       idToken: idToken,
       audience: clientId
     })   
    ```
+      
+</details>
+      
 
 </details>
-
 
 ## Sprawozdzanie 
 
