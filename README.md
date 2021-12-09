@@ -97,4 +97,4 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
 ## Sprawozdzanie 
 
 - Zdjęcie ekranu aplikacji po zalogowaniu.
-- Zdjęcie formatki logowania Google.
+- Zdjęcie formularza logowania Google.
