@@ -1,6 +1,6 @@
 Technologie Sieciowe Laboratorium
 ---
-####Mechanizmy authorization/accounting.
+#### Mechanizmy authorization/accounting.
 
 ## Wymagania wstępne
 
@@ -99,4 +99,7 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
 </details>
 
 
+## Sprawozdzanie 
 
+- Zdjęcie ekranu aplikacji po zalogowaniu.
+- Zdjęcie formatki logowania Google.
