@@ -5,7 +5,7 @@ Technologie Sieciowe Laboratorium
 ## Wymagania wstępne
 
 - Należy zainstalować [Node.js](https://nodejs.org/en/download/).
-> :information_source: Instalację można zweryfikować wykonująć w konsoli polecenie `npm -v`. 
+> :information_source: Instalację można zweryfikować wykonująć w konsoli polecenie `npm -v` oraz `node -v`
 - Przed uruchomieniem należy pobrać zależności projektu wykonując komendę `npm install` z poziomu katalogu.
 
 ## Uruchomienie projektu
@@ -67,7 +67,7 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
 <summary>Uzupełnić brakujące miejsca w kodzie.</summary>
 
       
-`main.pug` - lina 5, 33, 52
+`main.pug` - lina 5 (dodać Client ID), 33, 52 (dodać imię i nazwisko)
 
 <details>
 <summary>Linia 33</summary>
@@ -77,7 +77,7 @@ Przejść na stronę GCP gdzie możemy skonfigurowac dostęp do naszej aplikacji
    ```
 </details>
       
-`index.js` - linia 16, 65
+`index.js` - linia 16 (dodać Client ID), 65
 
 <details>
 <summary>Linia 65</summary>
